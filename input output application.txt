@@ -1,0 +1,16 @@
+#include <main.h>
+ int1 x;
+void main()
+{
+ 
+
+  
+       set_tris_a(0b00000001);// ra0 pini giriş olarak ayarlandı
+       set_tris_b(0b00000000);//b portu tümüyle çıkış olarak ayarlandı
+       output_b(0x00);//B portu temizlendi
+       basla:    
+       x=input(pin_a0);//a0 pini okundu ve x e aktarıldı
+       output_bit(pin_b0,x);//x değişkeni rb0 pini çıkışına aktarıldı 
+       goto basla;
+
+}
