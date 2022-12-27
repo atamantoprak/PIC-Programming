@@ -24,6 +24,6 @@ basla:
    giris=input_a();  // Aportundaki değer komple okunuyor ve okunan değer giris değişkenine aktarılıyor
    output_B(giris);   // giris değişkeni değeri B portuna çıkış olarak gönderiliyor
    
-   goto basla;     // basla etiketine dallanıyor
+   goto basla;     // basla etiketine dallanılıyor
    
 }
